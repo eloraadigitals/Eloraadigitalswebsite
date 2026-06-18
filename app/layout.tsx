@@ -4,6 +4,7 @@ import "./globals.css";
 import { AuthProvider } from "@/lib/firebase/auth";
 import ClientLayoutWrapper from "@/components/layout/ClientLayoutWrapper";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 
 // ---------------------------------------------------------------------------
 // Fonts
@@ -133,6 +134,7 @@ export default function RootLayout({
             {children}
           </ClientLayoutWrapper>
         </AuthProvider>
+        <Analytics />
 
       </body>
 
